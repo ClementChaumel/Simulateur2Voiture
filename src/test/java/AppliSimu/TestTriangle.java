@@ -1,7 +1,6 @@
 package AppliSimu;
 
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -15,9 +14,9 @@ public class TestTriangle {
 	@Test
 	public void testConversionMetresPixels() {
 		
-		IHMVoiture monTriangle = new IHMVoiture();
+		ObserverVoiture obs = new ObserverVoiture();
 		
-		int xPixels = monTriangle.calculerPositionPixels(110);
+		int xPixels = obs.calculerPositionPixels(110);
 		
 		assertEquals(55, xPixels);
 	}
